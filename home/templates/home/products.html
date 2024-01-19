@@ -1,0 +1,226 @@
+{% extends "home/base.html" %}
+{% load static %}
+{% block title %}Products{% endblock %}
+{% block content %}
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero d-flex align-items-center " style="margin-top: 80px;">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+
+                    <a href="#about"
+                        class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center custom-position">
+                        <span>BETA</span>
+                    </a>
+                   
+                
+
+                <h1 data-aos="fade-up" class="hero-HeaderText">Real-Time <br>
+                    Browser Defense.</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">
+                    Protect yourself, your familly, your businesses, your organizations, your employees, your users,
+                    your corporate brand
+                    and reputation with the industry's most accurate, fastest and scalable proactive browser-centric
+                    protection from today's
+                    advanced cyber threats across all attack vectors before they cause damage.
+                </h2>
+
+                <div data-aos="fade-up" data-aos-delay="600" class="productsBtn-hero-container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <a href="{% url 'preorder' %}"
+                                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>PRE-ORDER NOW!</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            &emsp13;
+                        </div>
+                        <div class="col-md-8">
+                            <a href="{% url 'individual_pricing' %}"
+                                class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>FREE TRIAL FOR INDIVIDUAL!</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                            &emsp13;
+                            <a href="{% url 'business_pricing' %}"
+                                class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span>FREE TRIAL FOR BUSINESS!</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                <img src="{% static 'assets/img/Products_browser_defense_picture.png' %}" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+</section><!-- End Hero -->
+
+
+<!-- ? what makes iFender different  ? -->
+
+<br>
+<div class="container mt-5">
+    <header class="section-header">
+        <p class="primary-color">Frequently Asked Questions ?</p>
+    </header>
+
+    <div class="row">
+        <div class="col-xs-12 question-accordion">
+            <div class="accordion" id="faqExample">
+
+                <!-- Question 1 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingOne">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <p>I already have an anti-virus installed, so what will iFender do for me?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Yes, we do offer both monthly and yearly options for our Pro, Teams and Business
+                                plans...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingTwo">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            <p>Our organization has already set up a firewall, what will iFender be used for?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Our organization has already set up a firewall, what will iFender be used for?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingThree">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            <p>Does using iFender require installing and updating any hardware or software?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Does using iFender require installing and updating any hardware or software?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingFour">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            <p>Is it difficult to start a trial of iFender products?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Does it take a long time to install iFender products?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingFive">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive">
+                            <p>How to use iFender?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Hightail is a cloud-based software that allows individuals and teams to securely
+                                transfer
+                                large files...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Question 6 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingSix">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix">
+                            <p>Can I test the iFender beta now?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Hightail is a cloud-based software that allows individuals and teams to securely
+                                transfer
+                                large files...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Question 6 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingSeven">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseSeven"
+                            aria-expanded="false" aria-controls="collapseSeven">
+                            <p>When will the stable version of iFender be available?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon" >
+                        </button>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Hightail is a cloud-based software that allows individuals and teams to securely
+                                transfer
+                                large files...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat this structure for other questions and answers -->
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+{% endblock %}

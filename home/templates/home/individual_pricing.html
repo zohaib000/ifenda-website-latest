@@ -1,0 +1,143 @@
+{% extends "home/base.html" %}
+{% block title %}Pricing Plans for Individual Products & Free Trial{% endblock %}
+{% block content %}
+{% load static %}
+<!-- ? main content section  ? -->
+
+<br><br><br>
+<div class="container mt-5 " style="padding-top: 30px;">
+
+
+    <header class="section-header">
+        <p>Product : iFender Browser Defense</p>
+    </header>
+
+
+
+    <!-- ? product 2 - IFENDER BROWSER DEFENSE -->
+    <header class="section-header">
+        <p class="fs-3 text-muted fw-bold">Transparent pricing for individuals</p><br>
+    </header>
+
+    <div class="container products-card-container ">
+
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="card pricing-card">
+                    <a class="text-center text-muted rounded-0 text-white btn fs-3 fw-bold">Personal</a>
+
+                    <div class="card-body p-5">
+                        <p class="card-text text-center">For up to <span class="fs-2 fw-bold ">1 Member</span></p>
+                        <div class="w-100 d-flex">
+                            <a href="#!" class="btn btn-success mx-auto fs-2 fw-bold w-100">$4 PER MONTH</a>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="text-center pt-5">Billed $48 once a Year.</p>
+
+
+                            <div class="row features-table-container my-4">
+                                <div class="col-6">
+                                    <h5 class="px-3 text-primary">Protection against</h5>
+                                    <ul>
+                                        <li>Phising Attacks</li>
+                                        <li>Scams</li>
+                                        <li>Social Engineering</li>
+                                        <li>Identity Theft</li>
+                                        <li>Credential Theft</li>
+                                        <li>Malware</li>
+                                        <li>Ransomware</li>
+                                        <li>Malicious URL</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="px-3 text-primary">Attack vectors</h5>
+                                    <ul>
+                                        <li>Internet</li>
+                                        <li>Email</li>
+                                        <li>SMS</li>
+                                        <li>Instant Messaging</li>
+                                        <li>Cloud Applications</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex">
+                                <a href="{% url 'individual_signup' %}"
+                                    class="btn-primary btn fs-3 fw-bold mx-auto my-5 w-100">START 14
+                                    DAY FREE TRIAL!</a>
+                            </div>
+                            <p class="text-center">No credit card required</p>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+
+            <div class="col-sm-6 mx-auto">
+                <div class="card h-100 pricing-card">
+                    <a class="text-muted text-center text-white btn fs-3 fw-bold">Family</a>
+                    <div class="card-body p-5">
+
+                        <p class="card-text text-center">up to <span class="fs-2 fw-bold ">5 members</span></p>
+                        <div class="w-100 d-flex">
+                            <a href="#!" class="btn btn-success mx-auto fs-2 fw-bold w-100">$16 PER MONTH</a>
+                        </div>
+
+                        <div class="mt-3">
+                            <p class="text-center pt-5">Billed $192 once a Year.</p>
+                            <div class="row features-table-container my-4">
+                                <div class="col-6">
+                                    <h5 class="px-3 text-primary">Protection against</h5>
+                                    <ul>
+                                        <li>Phising Attacks</li>
+                                        <li>Scams</li>
+                                        <li>Social Engineering</li>
+                                        <li>Identity Theft</li>
+                                        <li>Credential Theft</li>
+                                        <li>Malware</li>
+                                        <li>Ransomware</li>
+                                        <li>Malicious URL</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="px-3 text-primary">Attack vectors</h5>
+                                    <ul>
+                                        <li>Internet</li>
+                                        <li>Email</li>
+                                        <li>SMS</li>
+                                        <li>Instant Messaging</li>
+                                        <li>Cloud Applications</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+
+
+                            <div class="d-flex">
+                                <a  href="{% url 'individual_signup' %}"
+                                    class="w-100 btn-primary btn fs-3 fw-bold mx-auto my-5">START 14
+                                    DAY FREE TRIAL!</a>
+                            </div>
+                            <p class="text-center">No credit card required</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+</div>
+
+{% endblock %}

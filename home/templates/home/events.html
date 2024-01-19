@@ -1,0 +1,363 @@
+{% extends "home/base.html" %}
+{% block title %}Pricing Pages {% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- ? main content section  ? -->
+
+<br><br><br>
+<div class="container mt-5 " style="padding-top: 30px;">
+    <header class="section-header">
+        <h1 class="text-muted display-1 fw-bold primary-font-family">Events</h1>
+        <p class="text-muted lh-lg">
+        Join us at our upcoming events and learn more about how we fighting today's cybercrime across all attack vectors before
+        they infiltrate your digital assets.</p>
+    </header>
+
+<!-- container to show select bars & search bar -->
+
+<div class="container row">
+    
+
+    <div class="col-sm-4">
+        <div class="form-group">
+            <select name="Filter_by_Region" id="Filter_by_Region" class="form-control form-control-lg form-select">
+                <option value="" selected >Filter by Region</option>
+                <option value="ALL">ALL</option>
+                <option value="AMER">AMER</option>
+                <option value="APAC">APAC</option>
+                <option value="EMEA">EMEA</option>
+            </select>
+        </div>
+    </div>
+    
+
+    <div class="col-sm-4">
+        <div class="form-group">
+            <select name="Filter_by_Event_Type" id="Filter_by_Event_Type" class="form-control form-control-lg form-select">
+                <option value="" selected >Filter by Event Type</option>
+                <option value="ALL">ALL</option>
+                <option value="ON-DEMAND-WEBENAR">ON-DEMAND WEBENAR</option>
+                <option value="ONLINE-WEBENAR">ONLINE WEBENAR</option>
+                <option value="IN-PRESENCE">IN PRESENCE</option>
+            </select>
+        </div>
+    </div>
+
+
+    <div class="col-sm-4">
+        
+        
+        <div class="input-group border-2 border-primary">
+            <input type="search" placeholder="Search" name="searchInput"
+                class="form-control form-control-lg border-0">
+            <a href="#" class="input-group-text" style="background-color: #fff; border: none;">
+                <i class="fa-solid fa-magnifying-glass" style="color: #0091ff;"></i>
+            </a>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 newRoom mt-3">
+
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 m-2">
+                Online Webinar
+                <span class="position-absolute top-0 start-100 translate-middle p-2 ">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+
+            <img src="https://th.bing.com/th/id/R.177e14ed58d9fb8a482143d3451493e8?rik=4wvUcs6nG8z%2fFg&pid=ImgRaw&r=0" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title h5 fw-bold text-muted">RECORDED OCT 2023</h5>
+                <h5 class="card-title h3 fw-bold">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content.
+                    This content is a little bit longer.</p>
+            </div>
+            <div class="d-flex justify-content-between px-3 py-2">
+                <div>
+                    <a href="" class="primary-color fw-bold">EVENT DETAILS</a>
+                </div>
+            
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 m-2">
+                Online Webinar
+                <span class="position-absolute top-0 start-100 translate-middle p-2 ">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+
+            <img src="https://th.bing.com/th/id/R.177e14ed58d9fb8a482143d3451493e8?rik=4wvUcs6nG8z%2fFg&pid=ImgRaw&r=0" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title h5 fw-bold text-muted">RECORDED OCT 2023</h5>
+                <h5 class="card-title h3 fw-bold">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content.
+                    This content is a little bit longer.</p>
+            </div>
+            <div class="d-flex justify-content-between px-3 py-2">
+                <div>
+                    <a href="" class="primary-color fw-bold">EVENT DETAILS</a>
+                </div>
+            
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 m-2">
+                Online Webinar
+                <span class="position-absolute top-0 start-100 translate-middle p-2 ">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+
+            <img src="https://th.bing.com/th/id/R.177e14ed58d9fb8a482143d3451493e8?rik=4wvUcs6nG8z%2fFg&pid=ImgRaw&r=0" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title h5 fw-bold text-muted">RECORDED OCT 2023</h5>
+                <h5 class="card-title h3 fw-bold">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content.
+                    This content is a little bit longer.</p>
+            </div>
+            <div class="d-flex justify-content-between px-3 py-2">
+                <div>
+                    <a href="" class="primary-color fw-bold">EVENT DETAILS</a>
+                </div>
+            
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<br><br>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 news">
+
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 m-2">
+                ON-DEMAND WEBINAR
+                <span class="position-absolute top-0 start-100 translate-middle p-2 ">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+
+            <img src="https://th.bing.com/th/id/R.177e14ed58d9fb8a482143d3451493e8?rik=4wvUcs6nG8z%2fFg&pid=ImgRaw&r=0" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title h5 fw-bold text-muted">RECORDED OCT 2023</h5>
+                <h5 class="card-title h3 fw-bold">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content.
+                    This content is a little bit longer.</p>
+            </div>
+            <div class="d-flex justify-content-between px-3 py-2">
+                <div>
+                    <a href="" class="primary-color fw-bold">EVENT DETAILS</a>
+                </div>
+            
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 m-2">
+                ON-DEMAND WEBINAR
+                <span class="position-absolute top-0 start-100 translate-middle p-2 ">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+
+            <img src="https://th.bing.com/th/id/R.177e14ed58d9fb8a482143d3451493e8?rik=4wvUcs6nG8z%2fFg&pid=ImgRaw&r=0" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title h5 fw-bold text-muted">RECORDED OCT 2023</h5>
+                <h5 class="card-title h3 fw-bold">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content.
+                    This content is a little bit longer.</p>
+            </div>
+            <div class="d-flex justify-content-between px-3 py-2">
+                <div>
+                    <a href="" class="primary-color fw-bold">EVENT DETAILS</a>
+                </div>
+            
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 m-2">
+                ON-DEMAND WEBINAR
+                <span class="position-absolute top-0 start-100 translate-middle p-2 ">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+
+            <img src="https://th.bing.com/th/id/R.177e14ed58d9fb8a482143d3451493e8?rik=4wvUcs6nG8z%2fFg&pid=ImgRaw&r=0" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title h5 fw-bold text-muted">RECORDED OCT 2023</h5>
+                <h5 class="card-title h3 fw-bold">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content.
+                    This content is a little bit longer.</p>
+            </div>
+            <div class="d-flex justify-content-between px-3 py-2">
+                <div>
+                    <a href="" class="primary-color fw-bold">EVENT DETAILS</a>
+                </div>
+            
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<br><br>
+
+<div class="row row-cols-1 row-cols-md-3 g-4 pressRelease">
+
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 m-2">
+                EMA
+                <span class="position-absolute top-0 start-100 translate-middle p-2 ">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+
+            <img src="https://th.bing.com/th/id/R.177e14ed58d9fb8a482143d3451493e8?rik=4wvUcs6nG8z%2fFg&pid=ImgRaw&r=0" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title h5 fw-bold text-muted">RECORDED OCT 2023</h5>
+                <h5 class="card-title h3 fw-bold">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content.
+                    This content is a little bit longer.</p>
+            </div>
+            <div class="d-flex justify-content-between px-3 py-2">
+                <div>
+                    <a href="" class="primary-color fw-bold">EVENT DETAILS</a>
+                </div>
+            
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 m-2">
+                EMA
+                <span class="position-absolute top-0 start-100 translate-middle p-2 ">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+
+            <img src="https://th.bing.com/th/id/R.177e14ed58d9fb8a482143d3451493e8?rik=4wvUcs6nG8z%2fFg&pid=ImgRaw&r=0" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title h5 fw-bold text-muted">RECORDED OCT 2023</h5>
+                <h5 class="card-title h3 fw-bold">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content.
+                    This content is a little bit longer.</p>
+            </div>
+            <div class="d-flex justify-content-between px-3 py-2">
+                <div>
+                    <a href="" class="primary-color fw-bold">EVENT DETAILS</a>
+                </div>
+            
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+    <div class="col">
+        <div class="card h-100 position-relative">
+            <button type="button" class="btn btn-primary position-absolute top-0 end-0 m-2">
+                EMA
+                <span class="position-absolute top-0 start-100 translate-middle p-2 ">
+                    <span class="visually-hidden">New alerts</span>
+                </span>
+            </button>
+
+            <img src="https://th.bing.com/th/id/R.177e14ed58d9fb8a482143d3451493e8?rik=4wvUcs6nG8z%2fFg&pid=ImgRaw&r=0" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title h5 fw-bold text-muted">RECORDED OCT 2023</h5>
+                <h5 class="card-title h3 fw-bold">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                    additional content.
+                    This content is a little bit longer.</p>
+            </div>
+            <div class="d-flex justify-content-between px-3 py-2">
+                <div>
+                    <a href="" class="primary-color fw-bold">EVENT DETAILS</a>
+                </div>
+            
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Last updated 3 mins ago</small>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<br><br>
+
+
+
+
+
+</div>
+<div class="container mt-5"></div>
+
+
+{% endblock %}

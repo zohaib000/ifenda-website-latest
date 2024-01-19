@@ -1,0 +1,242 @@
+{% extends "home/base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% load static %}
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero d-flex align-items-center mt-3">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <h1  style="font-family: Verdana, Geneva, Tahoma, sans-serif;" data-aos="fade-up primary-color">The Radical Protection againts advanced cyber threats of today and tommorrow
+            is finally
+            here !</h1>
+          <h2 data-aos="fade-up" data-aos-delay="400">
+            iFender the industry's most accurate , fastest and scalabale proactive protection platform
+            designed to
+            protects individuals,businesses,organizations and governments agencies by stopping in real time
+            the most
+            complex and sophisticated cyber attacks of today, tommorow and beyond such as phisiing
+            scams,social
+            engineering, malware, ransomware , credential theft,identity theft m account takeover , brand
+            impersonation
+            and all malicious links and websites ,before they cause damage.
+  
+          </h2>
+
+            <div data-aos="fade-up" data-aos-delay="600" class="productsBtn-hero-container">
+              <div class="row">
+                <div class="col-md-4">
+                  <a href="{% url 'preorder' %}"
+                    class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>PRE-ORDER NOW!</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                  &emsp13;
+                </div>
+                <div class="col-md-8">
+                  <a href="{% url 'individual_pricing' %}"
+                    class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>FREE TRIAL FOR INDIVIDUAL!</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                  &emsp13;
+                  <a href="{% url 'business_pricing' %}"
+                    class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <span>FREE TRIAL FOR BUSINESS!</span>
+                    <i class="bi bi-arrow-right"></i>
+                  </a>
+                </div>
+            
+              </div>
+            </div>
+            
+        </div>
+        <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+          <img src="{% static 'assets/img/hero-img.png' %}" class="img-fluid" alt="">
+        </div>
+      </div>
+    </div>
+  
+  </section><!-- End Hero -->
+
+
+<!-- ? Why IFender ? -->
+<div class="container mt-5" style="    margin-top: 160px!important;">
+  <header class="section-header">
+    <p class="primary-color">Why iFender?</p>
+  </header>
+
+  <div class="row mt-3">
+    <div class="col-3">
+      <h1 class="value-number">
+        3<sup class="sup-text">rd</sup>
+      </h1>
+    </div>
+    <div class="col-8 mt-3">
+      <p>Cybercrime has grown to become the worlds thid largest conomy after the US and China,it is
+      projected to cost the world $8 trillion in 2023 and $10.5 trillion by 2025.</p>
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-3">
+      <h1 class="value-number">
+        95<sup class="sup-text">%</sup>
+      </h1>
+    </div>
+    <div class="col-8 mt-3">
+      <p>of cyberattacks are caused by human error.</p>
+      
+    </div>
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-3">
+      <h1 class="value-number">
+        98<sup class="sup-text">%</sup>
+      </h1>
+    </div>
+    <div class="col-8 mt-3"><p>of cyberattacks are caused by human error.</p></div>
+      
+
+  </div>
+
+  <div class="row mt-3">
+    <div class="col-3">
+      <h1 class="value-number">
+        85<sup class="sup-text">%</sup>
+      </h1>
+    </div>
+    <div class="col-8 mt-3">
+    <p>of phising incidents occur outside of email.They are no longer just an email problem,they
+    have spread across several attach vectors such as the web , SMS , instant messaging , spcoal networks,
+    collaboration platforms, videoconferecncing and gaming services and all cloud applications.</p>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- ? How iFender Works  ? -->
+<div class="container mt-5" style="    margin-top: 160px!important;">
+  <header class="section-header">
+    <p class="primary-color">How iFender works to protect you ?</p>
+  </header>
+  <p>iFender develops innovate and disruptive technologies that protect individuals , businesses, organizations and
+    government agencies by stopping the advanced cyber threats of today , tommorow and beyond in real time with a
+    single click , across all attach vectors before they cause damage.</p>
+</div>
+
+<!-- ? what makes iFender different  ? -->
+<div class="container mt-5" style="margin-top: 160px!important;">
+  <header class="section-header">
+    <p class="primary-color">What makes iFender different ?</p>
+  </header>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>Stops more than 90% advanced cyber threats than existing modern solutions</p>
+    </div>
+  </div>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11"  >
+      <p>More than 10x Faster than existing modern solutions; with prediction average time of less than 250 ms</p>
+    </div>
+  </div>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>install in minutes with zero impact on existing systems</p>
+    </div>
+  </div>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>99.85% detection rate with 0.00001% False positives</p>
+    </div>
+  </div>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>Seamless easy to use : not require any hardware , software or agent installation and update.</p>
+    </div>
+  </div>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>More than 500% ROI</p>
+    </div>
+  </div>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>Save over 80% on operating costs</p>
+    </div>
+  </div>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>Multi-Vectors protection : Web, email, SMS , Messaging apps, Social Networks , Collaborative Cloud Apps and
+        all Cloud Apps</p>
+    </div>
+  </div>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>Proactive protection : Detect and stop threats before they caused damage.</p>
+    </div>
+  </div>
+
+  <div class="row my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>Advancy cyberthreats protection : phising attacks, Social Engeenering , Scams , Brand impersonation ,
+        Malwares, Ransomwares, Credentials stealing , identiy theft and all malicious links and websites</p>
+    </div>
+  </div>
+
+  <div class="row  my-3" style="font-size: 20px;">
+    <div class="col-1 text-start" style="width: 40px!important;">
+      <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+    </div>
+    <div class="col-11" >
+      <p>Complete visibility into your cybercrime risks : Monitor all stopped cyberattacks and high risk users in your
+        iFender Dashboard.</p>
+    </div>
+  </div>
+
+</div>
+
+{% endblock %}

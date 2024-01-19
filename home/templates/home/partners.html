@@ -1,0 +1,133 @@
+{% extends "home/base.html" %}
+{% block title %}Partners{% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero d-flex align-items-center mt-3">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 d-flex flex-column justify-content-center">
+                <h1 data-aos="fade-up">iFender Partner Program</h1>
+                <h2 data-aos="fade-up" data-aos-delay="400">
+            Deliver more value to your customers with industry's most accurate, fastest and scalable real-time cyber threats
+            protection platform.
+
+                </h2>
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <div class="text-center text-lg-start">
+                        <a href="{% url 'apply_for_partner' %}"
+                            class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                            <span>Become a Partner!</span>
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
+                <img src="{% static 'assets/img/partners_image.jpg' %}" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>
+
+</section><!-- End Hero -->
+
+
+<!-- ?  Why partner with iFender?  ? -->
+<div class="container mt-5">
+    <header class="section-header">
+        <p>Why partner with iFender?</p>
+    </header>
+    <p>With iFender, accelerate new growth by integrating the industry's most accurate, fastest, and most scalable cyberattack
+    protection platform into your own solutions, gain complete transparency into your customers' cybersecurity risks by
+    stopping at source the most complex and sophisticated cyber threats across all attack vectors.</p>
+</div>
+
+<!-- ? what makes iFender different  ? -->
+<div class="container mt-5">
+    <header class="section-header">
+        <p>Benefits of partnering with iFender</p>
+    </header>
+
+    <p>Whether you are Business, organization, Managed Securiy Service Provider, iFender Partner Program is designed to
+    accelerate time to success and time to revenue for partners, also to provide partners with the necessary supports to
+    foster engagement, build community and drive growth.</p>
+
+    <div class="row" style="font-size: 20px;">
+        <div class="col-1 text-end">
+            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+        </div>
+        <div class="col-8">
+            <p>New business opportunities</p>
+        </div>
+    </div>
+
+    <div class="row" style="font-size: 20px;">
+        <div class="col-1 text-end">
+            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+        </div>
+        <div class="col-8">
+            <p>Immediate ROI.</p>
+        </div>
+    </div>
+
+    <div class="row" style="font-size: 20px;">
+        <div class="col-1 text-end">
+            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+        </div>
+        <div class="col-8">
+            <p>Access to iFender demo and sandbox environments.</p>
+        </div>
+    </div>
+
+    <div class="row" style="font-size: 20px;">
+        <div class="col-1 text-end">
+            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+        </div>
+        <div class="col-8">
+            <p>Access to Product resources, technical and sales support.</p>
+        </div>
+    </div>
+
+    <div class="row" style="font-size: 20px;">
+        <div class="col-1 text-end">
+            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+        </div>
+        <div class="col-8">
+            <p>Access to partner success centerp>
+        </div>
+    </div>
+
+    <div class="row" style="font-size: 20px;">
+        <div class="col-1 text-end">
+            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+        </div>
+        <div class="col-8">
+            <p>FREE TRIAL</p>
+        </div>
+    </div>
+
+    <div class="row" style="font-size: 20px;">
+        <div class="col-1 text-end">
+            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+        </div>
+        <div class="col-8">
+            <p>Products Discount</p>
+        </div>
+    </div>
+
+    <div class="row" style="font-size: 20px;">
+        <div class="col-1 text-end">
+            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+        </div>
+        <div class="col-8">
+            <p>Connect to a community and be the first to learn about product updates, organizational news, events and the latest
+            resources available to Partners.</p>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

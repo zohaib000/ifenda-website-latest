@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" style="background-color: #F7F7F7;">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>IFenda - {% block title %}{% endblock %}</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+    <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/remixicon/remixicon.css' %}" rel="stylesheet">
+    <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/47435b7356.js" crossorigin="anonymous"></script>
+
+    <!-- Template Main CSS File -->
+    <link href="{% static 'assets/css/style.css' %}" rel="stylesheet">
+
+    <link rel="stylesheet" href="{% static 'assets/css/custom.css' %}">
+
+  
+    
+    <style>
+        .block-content {
+            margin-top: 230px;
+            background-color: #F7F7F7 !important;
+        }
+
+        #topPromotionHeader {
+            background-color: #333333;
+        }
+
+        .navbar-beta-btn{
+                background: #4154f1;
+                color: white;
+                border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body style="background-color: #F7F7F7;">
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top">
+        <div class="w-100 p-3" id="topPromotionHeader">
+
+            <div class="row mt-3">
+                <div class="col-11">
+                    <a href="">
+                        <h5 class="text-white text-center ">Get advanced protection against cybercrime by pre-ordering
+                            iFender
+                            now - Save up to 50% while the offer lasts
+                        </h5>
+                    </a>
+                </div>
+                <div class="col-1">
+                    <button class="btn btn-light" id="closeBtn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+            <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+                <img src="{% static 'assets/img/logo.png' %}" alt="">
+                <span></span>
+            </a>
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                        <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down"></i></a>
+                            <ul style="width: 480px;">
+                        
+                                <li>
+                                    <div class="row my-3">
+                                        <div class="col-8">
+                                            <a href="{% url 'products' %}" class="text-primary fw-bold">🚀 IFender Real Time Browser
+                                                Defense</a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#about"
+                                                class="navbar-beta-btn text-white btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center mt-0">
+                                                <span>BETA</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                        
+                                <li>
+                                    <div class="row my-3">
+                                        <div class="col-8">
+                                            <a href="{% url 'products' %}?product=api" class="text-muted fw-bold">🚀 IFender Real Time Browser
+                                                Api</a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#about"
+                                                class="navbar-beta-btn text-white btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center mt-0">
+                                                <span>BETA</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>    
+                        </li>
+                    <li><a class="nav-link scrollto " href="{% url 'pricing' %}">Pricing</a></li>
+                    <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">Company</a></li>
+                            <li><a href="{% url 'news' %}">News & Press</a></li>
+                            <li><a href="{% url 'events' %}">Events</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a class="nav-link scrollto " href="{% url 'partners' %}">Partners</a></li>
+
+
+
+
+
+                    <li><a class="nav-link scrollto" href="{% url 'contact' %}">Contact</a></li>
+                    <li><a class="getstarted scrollto" href="{% url 'pricing' %}">FREE TRIAL</a></li>
+                    <li class="dropdown"><a href="#"><span>EN</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="#">English</a></li>
+                            <li><a href="#">Duetsch</a></li>
+                            <li><a href="#">Francais</a></li>
+                        </ul>
+                    </li>
+
+
+               
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+
+
+    <div class="block-content" id="blockContent">
+        {% block content %}
+
+        {% endblock %}
+    </div>
+
+
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer mt-5">
+
+        <div class="footer-newsletter " style="margin-top: 100px;">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-12 text-center">
+                        <header class="section-header">
+                            <p class="primary-color">Don't miss anything</p>
+
+                        </header>
+                        <p>Get industry trends, insights and practical tips for fighting cybercrime.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <form action="" method="post">
+                            <input type="email" name="email"><input type="submit" value="SUBSCRIBE">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-top">
+            <div class="container">
+                <div class="row gy-4">
+                    <div class="col-lg-5 col-md-12 footer-info">
+                        <a href="{% url 'home' %}" class="logo d-flex align-items-center">
+                            <img src="{% static 'assets/img/logo.png' %}" alt="">
+                        </a>
+                        <p class="primary-font-size">The Radical Protection againts advanced cyber threats of today and
+                            tommorrow is finally here
+                            !</p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-6 footer-links">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <a class="primary-color primary-font-size"
+                                    href="{% url 'home' %}">Home</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="primary-color primary-font-size"
+                                    href="{% url 'products' %}">Products</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="primary-color primary-font-size"
+                                    href="{% url 'contact' %}">Company</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="primary-color primary-font-size"
+                                    href="{% url 'news' %}">News & Press</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="primary-color primary-font-size"
+                                    href="{% url 'events' %}">Events</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="primary-color primary-font-size"
+                                    href="{% url 'partners' %}">Partners</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a class="primary-color primary-font-size"
+                                    href="{% url 'login' %}">Login</a></li>
+                        </ul>
+                    </div>
+
+    
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container d-flex justify-content-between">
+            <div>
+                <div class="copyright primary-font-size" style="color: white;">
+                    &copy; 2024 iFender. All Rights Reserved.
+                </div>
+            </div>
+            <div style="margin-top: 22px;">
+                <a href="" class="mx-4 text-white primary-font-size">Terms of services</a>
+
+                <a href="" class="mx-4 text-white primary-font-size">Privacy Policy</a>
+
+            </div>
+
+        </div>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+    <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+    <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+    <script src="{% static 'assets/js/jquery.js' %}" type="text/javascript"></script>
+
+    <!-- Template Main JS File -->
+    <!-- Template Main JS File -->
+    <script src="{% static 'assets/js/main.js' %}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+
+
+    <!-- ? for custom range slider  -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/css/bootstrap-slider.css"
+        integrity="sha512-SZgE3m1he0aEF3tIxxnz/3mXu/u/wlMNxQSnE0Cni9j/O8Gs+TjM9tm1NX34nRQ7GiLwUEzwuE3Wv2FLz2667w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/11.0.2/bootstrap-slider.js"
+        integrity="sha512-tCkLWlSXiiMsUaDl5+8bqwpGXXh0zZsgzX6pB9IQCZH+8iwXRYfcCpdxl/owoM6U4ap7QZDW4kw7djQUiQ4G2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--  script code for bootstrap slider -->
+
+    <script>
+        $(document).ready(function () {
+
+            $("#ex13").slider({
+                ticks: [0, 100, 200, 300],
+                ticks_labels: ['10K', '100K', '500K', '1M'],
+                ticks_snap_bounds: 30,
+                tooltip: 'hide',
+
+
+            });
+
+            $("#ex14").slider({
+                ticks: [0, 100, 200, 300],
+                ticks_labels: ['10', "50", '100', '1000'],
+                ticks_snap_bounds: 30,
+                tooltip: 'hide',
+
+
+            });
+
+        });
+
+    </script>
+
+    <!-- jquery for for FAQ -->
+    <script>
+        $(document).ready(function () {
+            $('.collapse').on('show.bs.collapse', function () {
+                $(this).prev().find('img').attr('src', 'static/assets/img/minus.png');
+            });
+
+            $('.collapse').on('hide.bs.collapse', function () {
+                $(this).prev().find('img').attr('src', 'static/assets/img/plus.png');
+            });
+
+            $("#closeBtn").click(() => {
+                $("#topPromotionHeader").hide()
+                // $("#blockContent").removeClass("block-content")
+            })
+        });
+    </script>
+
+</body>
+
+</html>

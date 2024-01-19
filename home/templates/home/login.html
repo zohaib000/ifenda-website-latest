@@ -1,0 +1,43 @@
+{% extends "home/base.html" %}
+{% block title %}Login{% endblock %}
+{% block content %}
+{% load static %}
+
+<style>
+    html,
+    body {
+        overflow-x: hidden;
+    }
+</style>
+
+<div class="container row class signup-container mx-5">
+
+    <div class="col-md-6">
+        <form>
+
+            <div class="form-group mt-4">
+                <label for="" class="mb-2">Username</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your username">
+            </div>
+
+            <div class="form-group mt-4">
+                <label for="" class="mb-2">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Enter your password">
+            </div>
+            
+
+            <div class="form-group mt-5">
+                <p>By continuing you agree to the iFender's <a href="">Privacy Policy</a> and <a href="">Terms of
+                        Service?</a></p>
+            </div>
+            <a href="{% url 'request_reset_password' %}" class="text-danger">Forget Password</a>
+            <button type="submit" class="btn btn-primary mt-2 w-100">Login</button>
+        </form>
+        <a href="{% url 'signup' %}" class="btn btn-primary mt-2 w-100">Create a New Account </a>
+    </div>
+
+    <div class="col-md-6 signupImageColumn">
+        <img src="static/assets/img/signupImage.png" style="width: 100%;height: 100%;">
+    </div>
+</div>
+{% endblock %}
