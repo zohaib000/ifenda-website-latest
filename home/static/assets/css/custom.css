@@ -21,3 +21,12 @@
 .pricing-card{
         border-radius: 20px!important;
 }
+
+
+.slider-handle,.slider-tick{
+    background-image: linear-gradient(to bottom, #007FFF, #007FFF)!important;
+}
+
+.slider-selection{
+    background-image: linear-gradient(to bottom, #666666, #666666)!important;
+}

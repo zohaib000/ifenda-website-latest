@@ -4,17 +4,39 @@
 {% load static %}
 <!-- ? main content section  ? -->
 
+<style>
+    .btn-business {
+        background-color: #666666;
+        border: 1px solid #666666;
+        width: 20%;
+    }
+
+    .btn-individual {
+        background-color: #007FFF;
+        border: 1px solid #007FFF;
+        width: 20%;
+    }
+</style>
+
+
 <br><br><br>
 <div class="container mt-5 " style="padding-top: 30px;">
 
 
+    <div class="mx-auto d-flex justify-content-center">
+        <a href="{% url 'individual_pricing' %}" class="btn btn-primary btn-individual">Individual</a>
+        <a href="{% url 'business_pricing' %}" class="btn btn-primary btn-business">Business</a>
+    </div>
+
+
     <header class="section-header">
-        <p>Product : iFender Browser Defense</p>
+        <p class="primary-color">Product : iFender Browser Defense</p>
     </header>
 
 
 
     <!-- ? product 2 - IFENDER BROWSER DEFENSE -->
+
     <header class="section-header">
         <p class="fs-3 text-muted fw-bold">Transparent pricing for individuals</p><br>
     </header>
@@ -29,7 +51,7 @@
                     <div class="card-body p-5">
                         <p class="card-text text-center">For up to <span class="fs-2 fw-bold ">1 Member</span></p>
                         <div class="w-100 d-flex">
-                            <a href="#!" class="btn btn-success mx-auto fs-2 fw-bold w-100">$4 PER MONTH</a>
+                            <a href="#!" class="btn text-muted text-center mx-auto fs-2 fw-bold w-100">$4 per month</a>
                         </div>
 
                         <div class="mt-3">
@@ -86,7 +108,7 @@
 
                         <p class="card-text text-center">up to <span class="fs-2 fw-bold ">5 members</span></p>
                         <div class="w-100 d-flex">
-                            <a href="#!" class="btn btn-success mx-auto fs-2 fw-bold w-100">$16 PER MONTH</a>
+                            <a href="#!" class="btn text-muted text-center mx-auto fs-2 fw-bold w-100">$16 per month</a>
                         </div>
 
                         <div class="mt-3">
