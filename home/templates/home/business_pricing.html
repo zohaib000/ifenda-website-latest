@@ -5,49 +5,81 @@
 <!-- ? main content section  ? -->
 
 <style>
+       .product-title{
+        font-size: 48px!important;
+    }
+
     .btn-individual{
         background-color: #666666;
         border: 1px solid #666666;
-        width: 20%;
+        width: 30%;
     }
    
     .btn-business{
         background-color: #007FFF;
         border: 1px solid  #007FFF;
-        width: 20%;
+        width: 30%;
     }
+
+    .plan-text{
+            font-size: 70px!important;
+    font-family: verdana;
+    }
+
+  
 </style>
 
 <br><br><br>
 <div class="container mt-5 " style="padding-top: 30px;">
 
-    <div class="mx-auto d-flex justify-content-center">
-        <a href="{% url 'individual_pricing' %}" class="btn btn-primary btn-individual">Individual</a>
-        <a href="{% url 'business_pricing' %}" class="btn btn-primary btn-business">Business</a>
-    </div>
+
 
     <header class="section-header">
-        <p class="primary-color">Product : iFender Browser Defense</p>
+        <p class="text-muted fs-1 display-1 fw-bold plan-text">Choose your Plan</p>
     </header>
 
    
+    
 
     <!-- ? product 2 - IFENDER BROWSER DEFENSE -->
+    <p class="text-center fs-3 mt-3">Transparent pricing for individuals and businesses</p><br>
     <header class="section-header">
-        <p class="fs-3 text-muted fw-bold">Transparent pricing for individuals and businesses</p><br>
-        <span class="mt-5">Select the users</span>
+
+        <div class="mx-auto d-flex justify-content-center mt-2 p-4 ">
+            <a href="{% url 'individual_pricing' %}" class="btn btn-primary btn-individual fs-3">INDIVIDUAL</a>
+            <a href="{% url 'business_pricing' %}" class="btn btn-primary btn-business fs-3">BUSINESS</a>
+        </div>
+
+        <p class="primary-color mt-5 pt-5 product-title">Product : iFender Browser Defense</p><br><br>
+        <span class="mt-5">Select the number of users you need</span>
         <br><br>
-        <input id="ex14" type="text" />
+        <!-- <input id="ex14" type="text" /><br> -->
+
+    
+        <div class="row mt-3">
+            <a onclick="changeUsersSlider(this)"  class="col-sm-3 fs-3 sliderOption" data-value="10" >10 Users</a>
+            <a onclick="changeUsersSlider(this)"  class="col-sm-3 fs-3 sliderOption" data-value="50" >50 Users</a>
+            <a onclick="changeUsersSlider(this)"  class="col-sm-3 fs-3 sliderOption" data-value="100" >100 Users</a>
+            <a onclick="changeUsersSlider(this)"  class="col-sm-3 fs-3 sliderOption" data-value="1000" >1000 Users</a>
+        </div>
+        <div class="form-group mt-3">
+            <input type="range" class="form-range" id="userSlider" disabled max="1000">
+        </div>
+     
+
     </header>
 
-    <div class="container products-card-container ">
+       
+
+
+    <div class="container products-card-container mt-5">
 
         <div class="row">
             <div class="col-sm-6 mx-auto">
                 <div class="card pricing-card">
-                    <a class="text-muted text-center btn fs-3 fw-bold">Business</a>
+                    <a class="text-muted text-center btn fs-3 fw-bold mt-5">Business</a>
                     <div class="card-body p-5">
-                        <p class="card-text text-center">For up to <span class="fs-2 fw-bold ">10 users</span></p>
+                        <p class="card-text text-center">For up to <span class="fs-2 fw-bold ">10 </span>users</p>
                         <div class="w-100 d-flex">
                             <a href="#!" class="text-muted text-center mx-auto fs-2 fw-bold w-100">$50 per month</a>
                         </div>
@@ -99,9 +131,9 @@
             </div>
             <div class="col-sm-6 mx-auto">
                 <div class="card h-100 pricing-card">
-                    <a class="text-muted text-center btn fs-3 fw-bold">Enterprise</a>
+                    <a class="text-muted text-center btn fs-3 fw-bold mt-5">Enterprise</a>
                     <div class="card-body p-5">
-                        <p class="card-text text-center">More than <span class="fs-2 fw-bold ">1000 users</span></p>
+                        <p class="card-text text-center">More than <span class="fs-2 fw-bold ">1000 </span>users</p>
                         <p class="text-start">+ Brand impersonation protection</p>
                         <p class="text-start">+ Premium Support</p>
                         <p class="text-start">+ Flexible Pricing</p>
@@ -144,15 +176,27 @@
     </div>
    
    
+    <br><br>
     <!-- ? products container 2 -->
     <header class="section-header mt-5">
-        <p class="primary-color">Product : iFender Online Fraud Protection</p>
+        <p class="primary-color product-title">Product : iFender Real-Time Defense API</p>
     </header>
+
     <header class="section-header">
-        <p class="fs-3 text-muted fw-bold">Transparent pricing for developers and businesses</p><br>
         <span class="mt-5">Select the number of Monthly calls you need</span>
         <br><br>
-        <input id="ex13" type="text" />
+    
+
+        <div class="row mt-3">
+            <a onclick="changeApiCallsSlider1(this)" class="col-sm-3 fs-3 sliderOption" data-value="5">5K</a>
+            <a onclick="changeApiCallsSlider1(this)" class="col-sm-3 fs-3 sliderOption" data-value="10">10K</a>
+            <a onclick="changeApiCallsSlider1(this)" class="col-sm-3 fs-3 sliderOption" data-value="50">50k</a>
+            <a onclick="changeApiCallsSlider1(this)" class="col-sm-3 fs-3 sliderOption" data-value="100">100k</a>
+        </div>
+        <div class="form-group mt-3">
+            <input type="range" class="form-range" id="apiSlider1"  disabled max="1000">
+        </div>
+
     </header>
 
 
@@ -160,7 +204,7 @@
         <div class="row">
             <div class="col-sm-6 mx-auto">
                 <div class="card pricing-card">
-                    <a class="text-muted text-center btn fs-3 fw-bold">Business</a>
+                    <a class="text-muted text-center btn fs-3 fw-bold mt-5">Business</a>
                     <div class="card-body p-5">
                         <p class="card-text text-center">For up to <span class="fs-2 fw-bold ">10K</span> API Calls per month</p>
                         <div class="w-100 d-flex">
@@ -206,15 +250,132 @@
                        </div>
                     </div>
                  
-                      
-
-
 
                 </div>
             </div>
             <div class="col-sm-6 mx-auto">
                 <div class="card h-100 pricing-card">
-                    <a class="text-muted text-center btn fs-3 fw-bold">Enterprise</a>
+                    <a class="text-muted text-center btn fs-3 fw-bold mt-5">Enterprise</a>
+                    <div class="card-body p-5">
+                        <p class="card-text text-center">More than <span class="fs-2 fw-bold ">1M</span> API calls per month</p>
+                        <p class="text-start">+ Brand impersonation protection</p>
+                        <p class="text-start">+ Premium Support</p>
+                        <p class="text-start">+ Flexible Pricing</p>
+
+                        <div class="d-flex">
+                            <a href="?product=browser" class="w-100 btn-primary btn fs-3 fw-bold mx-auto my-5">🚀 Contact Sales</a>
+                        </div>
+
+                            <div class="row features-table-container mb-5">
+                                <div class="col-6">
+                                    <h5 class="px-3 text-primary">Protection against</h5>
+                                    <ul>
+                                        <li>Phising Attacks</li>
+                                        <li>Scams</li>
+                                        <li>Social Engineering</li>
+                                        <li>Identity Theft</li>
+                                        <li>Credential Theft</li>
+                                        <li>Malware</li>
+                                        <li>Ransomware</li>
+                                        <li>Malicious URL</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <h5 class="px-3 text-primary">Attack vectors</h5>
+                                    <ul>
+                                        <li>Internet</li>
+                                        <li>Email</li>
+                                        <li>SMS</li>
+                                        <li>Instant Messaging</li>
+                                        <li>Cloud Applications</li>
+                                    </ul>
+                                </div>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+   
+    <!-- ? products container 2 -->
+    <header class="section-header mt-5 py-5">
+        <p class="primary-color">Product : iFender Online Fraud Protection</p>
+    </header>
+
+    <header class="section-header">
+        <span class="mt-5">Select the number of Monthly calls you need</span>
+        <br><br>
+        <div class="row mt-3">
+            <a onclick="changeApiCallsSlider2(this)" class="col-sm-3 fs-3 sliderOption" data-value="5">5K</a>
+            <a onclick="changeApiCallsSlider2(this)" class="col-sm-3 fs-3 sliderOption" data-value="10">10K</a>
+            <a onclick="changeApiCallsSlider2(this)" class="col-sm-3 fs-3 sliderOption" data-value="50">50k</a>
+            <a onclick="changeApiCallsSlider2(this)" class="col-sm-3 fs-3 sliderOption" data-value="100">100k</a>
+        </div>
+        <div class="form-group mt-3">
+            <input type="range" class="form-range" id="apiSlider2" disabled max="1000">
+        </div>
+    </header>
+
+
+    <div class="container products-card-container mt-4">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <div class="card pricing-card">
+                    <a class="text-muted text-center btn fs-3 fw-bold mt-5">Business</a>
+                    <div class="card-body p-5">
+                        <p class="card-text text-center">For up to <span class="fs-2 fw-bold ">10K</span> API Calls per month</p>
+                        <div class="w-100 d-flex">
+                            <a href="#!" class="text-muted text-center mx-auto fs-2 fw-bold w-100">$200 per month</a>
+                        </div>
+
+                       <div class="mt-5">
+                         <p class="text-center">Billed $2400 once a Year.</p>
+                         <p class="text-center">$0.002 per additional
+                             Api Call</p>
+                         
+                         <div class="row features-table-container">
+                             <div class="col-6">
+                                 <h5 class="px-3 text-primary">Protection against</h5>
+                                 <ul>
+                                     <li>Phising Attacks</li>
+                                     <li>Scams</li>
+                                     <li>Social Engineering</li>
+                                     <li>Identity Theft</li>
+                                     <li>Credential Theft</li>
+                                     <li>Malware</li>
+                                     <li>Ransomware</li>
+                                     <li>Malicious URL</li>
+                                 </ul>
+                             </div>
+                             <div class="col-6">
+                                 <h5 class="px-3 text-primary">Attack vectors</h5>
+                                 <ul>
+                                     <li>Internet</li>
+                                     <li>Email</li>
+                                     <li>SMS</li>
+                                     <li>Instant Messaging</li>
+                                     <li>Cloud Applications</li>
+                                 </ul>
+                             </div>
+                         </div>
+                         
+                         
+                         <div class="d-flex">
+                             <a href="{% url 'business_signup' %}" class="w-100 btn-primary btn fs-3 fw-bold mx-auto my-5">START 14 DAY FREE TRIAL!</a>
+                         </div>
+                         <p class="text-center">No credit card required</p>
+                       </div>
+                    </div>
+                 
+
+                </div>
+            </div>
+            <div class="col-sm-6 mx-auto">
+                <div class="card h-100 pricing-card">
+                    <a class="text-muted text-center btn fs-3 fw-bold mt-5">Enterprise</a>
                     <div class="card-body p-5">
                         <p class="card-text text-center">More than <span class="fs-2 fw-bold ">1M</span> API calls per month</p>
                         <p class="text-start">+ Brand impersonation protection</p>
@@ -261,5 +422,220 @@
 
 
 </div>
+
+<br>
+<div class="container mt-5">
+    <header class="section-header">
+        <p class="primary-color">Frequently Asked Questions ?</p>
+    </header>
+
+    <div class="row">
+        <div class="col-xs-12 question-accordion">
+            <div class="accordion" id="faqExample">
+
+                <!-- Question 1 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingOne">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne">
+                            <p>I already have an anti-virus installed, so what will iFender do for me?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Yes, we do offer both monthly and yearly options for our Pro, Teams and Business
+                                plans...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 2 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingTwo">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseTwo"
+                            aria-expanded="false" aria-controls="collapseTwo">
+                            <p>Our organization has already set up a firewall, what will iFender be used for?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Our organization has already set up a firewall, what will iFender be used for?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 3 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingThree">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseThree"
+                            aria-expanded="false" aria-controls="collapseThree">
+                            <p>Does using iFender require installing and updating any hardware or software?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Does using iFender require installing and updating any hardware or software?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 4 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingFour">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseFour"
+                            aria-expanded="false" aria-controls="collapseFour">
+                            <p>Is it difficult to start a trial of iFender products?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Does it take a long time to install iFender products?
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Question 5 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingFive">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseFive"
+                            aria-expanded="false" aria-controls="collapseFive">
+                            <p>How to use iFender?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Hightail is a cloud-based software that allows individuals and teams to securely
+                                transfer
+                                large files...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Question 6 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingSix">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseSix"
+                            aria-expanded="false" aria-controls="collapseSix">
+                            <p>Can I test the iFender beta now?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Hightail is a cloud-based software that allows individuals and teams to securely
+                                transfer
+                                large files...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Question 6 -->
+                <div class="card mb-2">
+                    <div class="card-header p-2" id="headingSeven">
+                        <button class="btn btn-link question d-flex" data-toggle="collapse" data-target="#collapseSeven"
+                            aria-expanded="false" aria-controls="collapseSeven">
+                            <p>When will the stable version of iFender be available?</p>
+                            <img src="{% static '/assets/img/plus.png' %}" alt="Open" class="plus-icon">
+                        </button>
+                    </div>
+                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#faqExample">
+                        <div class="card-body">
+                            <p class="answer">
+                                Hightail is a cloud-based software that allows individuals and teams to securely
+                                transfer
+                                large files...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Repeat this structure for other questions and answers -->
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+    <script src="{% static 'assets/js/jquery.js' %}" type="text/javascript"></script>
+
+<script>
+     function changeUsersSlider(selectedButton){
+        var slider = document.getElementById("userSlider");
+        var originalValue =selectedButton.getAttribute("data-value")
+        changedValue=0
+
+        if (originalValue == 10) {
+             changedValue=105
+         } else if (originalValue == 50) {
+             changedValue = 370
+         } else if (originalValue == 100) {
+             changedValue = 627
+             
+         } else if (originalValue == 1000) {
+             changedValue = 895
+         }
+
+        slider.value= changedValue
+     }
+     
+     function changeApiCallsSlider1(selectedButton){
+        var slider = document.querySelector("#apiSlider1");
+        var originalValue =selectedButton.getAttribute("data-value")
+        changedValue=0
+
+        if (originalValue == 5) {
+             changedValue=105
+         } else if (originalValue == 10) {
+             changedValue = 370
+         } else if (originalValue == 50) {
+             changedValue = 627
+             
+         } else if (originalValue == 100) {
+             changedValue = 895
+         }
+
+        slider.value= changedValue
+     }
+     
+     function changeApiCallsSlider2(selectedButton){
+        var slider = document.querySelector("#apiSlider2");
+        var originalValue =selectedButton.getAttribute("data-value")
+        changedValue=0
+
+        if (originalValue == 5) {
+             changedValue=105
+         } else if (originalValue == 10) {
+             changedValue = 370
+         } else if (originalValue == 50) {
+             changedValue = 627
+             
+         } else if (originalValue == 100) {
+             changedValue = 895
+         }
+
+        slider.value= changedValue
+     }
+</script>
 
 {% endblock %}

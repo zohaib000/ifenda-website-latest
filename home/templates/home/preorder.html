@@ -5,46 +5,60 @@
 
 <!-- ? main content section  ? -->
 
+<style>
+    .col-3{
+            text-align: center;
+    }
+
+    .col-3 h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+</style>
+
 <br><br><br>
 <div class="container mt-5 " style="padding-top: 30px;">
     <header class="section-header">
-        <p>The Radical protection against cyber threats of today and tomorrow is finally here!</p>
+        <p class="text-start primary-color">The Radical protection against cyber threats of today and tomorrow is finally here!</p>
     </header>
 
     <div class="row">
-        <div class="col-md-8">
-            <h2 class="fw-bolder" style="font-family: Verdana, Geneva, Tahoma, sans-serif;">Save up to 50% While offer
+        <div class="col-md-12">
+            <h2 class="fw-bolder" style="font-family: Verdana;    color: #666666;">Save up to 50% While offer
                 lasts</h2>
         </div>
 
-        <div class="col-md-4">
-            <div class="container timer-box p-4">
-                <div class="row">
-                    <div class="col-3">
-                        <h4 class="text-white fw-bold">30</h4>
-                    </div>
-                    <div class="col-3">
-                        <h4 class="text-white fw-bold">30</h4>
-                    </div>
-                    <div class="col-3">
-                        <h4 class="text-white fw-bold">30</h4>
-                    </div>
-                    <div class="col-3">
-                        <h4 class="text-white fw-bold">30</h4>
-                    </div>
+        
+    </div>
+
+<div class="row">
+    <div class="col-md-4 mx-auto mt-5">
+        <div class="container timer-box p-4">
+            <div class="row">
+                <div class="col-3">
+                    <h1 id="days" class="text-white fw-bold">30</h1>
                 </div>
-                <div class="row">
-                    <div class="col-3 text-white">Days</div>
-                    <div class="col-3 text-white">Hrs</div>
-                    <div class="col-3 text-white">Mins</div>
-                    <div class="col-3 text-white">Sec</div>
+                <div class="col-3">
+                    <h1 id="hours" class="text-white fw-bold">30</h1>
                 </div>
+                <div class="col-3">
+                    <h1 id="minutes" class="text-white fw-bold">30</h1>
+                </div>
+                <div class="col-3">
+                    <h1 id="seconds" class="text-white fw-bold">30</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-3 text-white">Days</div>
+                <div class="col-3 text-white">Hrs</div>
+                <div class="col-3 text-white">Mins</div>
+                <div class="col-3 text-white">Sec</div>
             </div>
         </div>
     </div>
+</div>
 
-    <div class="container mt-4">
-        <p>
+    <div class="container mt-4 py-5">
+        <p style="font-size: 25px;">
             Whether you are an individual, business, organization or government agency, join iFender by <a
                 href="">contribute to defeating
                 cybercrime</a> by <a href="#">pre-ordering now</a>, the first platform dedicated to protecting humans
@@ -53,16 +67,24 @@
             Cloud Apps).
         </p>
 
-        <h4 class="fw-bolder">
+        <h4 class="fw-bolder py-5" style="font-size: 29px;" >
             We need it
             For a large-scale global deployment of our platform planned for February 2024.
             </p>
     </div>
 
-    <div class="container d-flex mt-5">
-        <div class="mx-auto">
-            <a href="{% url 'individual_preorder_products' %}" class="btn-primary btn fs-3 fw-bold">PRE-ORDER NOW As individual!</a>
-            <a href="{% url 'business_preorder_products' %}" class="btn-primary btn fs-3 fw-bold text-white">PRE-ORDER NOW As Business!</a>
+
+    <div class="container mt-3 py-1">
+        <div class="d-flex">
+            <a href="/individual_preorder_products" class="btn-primary btn fs-3 fw-bold" style="
+            padding: 20px;
+            width: 60%;
+        ">PRE-ORDER NOW AS INDIVIDUAL!</a>
+            &nbsp;
+            <a href="/business_preorder_products" class="btn-primary btn fs-3 fw-bold text-white" style="
+            padding: 20px;
+            width: 60%;
+        ">PRE-ORDER NOW AS BUSINESS!</a>
         </div>
 
     </div>
@@ -70,5 +92,39 @@
 
 
 </div>
+
+{% include "home/quiz.html" %}
+
+
+
+<script>
+    // Set the initial duration in seconds (replace this with your desired duration)
+    var durationInSeconds = 30 * 24 * 60 * 60;
+
+    // Update the countdown every 1 second
+    var x = setInterval(function () {
+        // Calculate days, hours, minutes, and seconds
+        var days = Math.floor(durationInSeconds / (24 * 60 * 60));
+        var hours = Math.floor((durationInSeconds % (24 * 60 * 60)) / (60 * 60));
+        var minutes = Math.floor((durationInSeconds % (60 * 60)) / 60);
+        var seconds = durationInSeconds % 60;
+
+        // Display the countdown
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        // If the countdown is over, display a message
+        if (durationInSeconds <= 0) {
+            clearInterval(x);
+            document.getElementById("days").innerText = "EXPIRED";
+        }
+
+        // Decrement the duration
+        durationInSeconds--;
+
+    }, 1000);
+</script>
 <div class="container mt-5"></div>
 {% endblock %}

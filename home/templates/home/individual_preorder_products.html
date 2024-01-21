@@ -8,7 +8,7 @@
 <br><br><br>
 <div class="container mt-5 " style="padding-top: 30px;">
     <header class="section-header">
-        <p>You're almost there !</p>
+        <p class="primary-color">You're almost there !</p>
     </header>
 
     <p class="mt-3">
@@ -18,11 +18,11 @@
     </p>
 
     <header class="section-header mt-5">
-        <p>Save up to 50% OFF !</p>
+        <p class="primary-color">Save up to 50% OFF !</p>
     </header>
 
     <header class="section-header">
-        <p>Product : iFender Browser Defense</p>
+        <p class="primary-color">Product : iFender Browser Defense</p>
     </header>
 
     <p class="">
@@ -55,9 +55,9 @@
                 <div class="card pricing-card">
                     <a class="rounded-0 text-muted text-center fs-3 fw-bold mt-3">Personal</a>
                     <div class="card-body p-5">
-                        <p class="card-text text-center">1 Member</p>
+                        <p class="card-text text-center"><span class="fs-2 fw-bold ">1</span> Member</p>
                         <div class="w-100 d-flex">
-                            <a href="#!" class="btn btn-success mx-auto fs-4 w-100">Save 50 %</a>
+                            <a href="#!" class="text-center text-muted mx-auto fs-4 w-100">Save 50 %</a>
                         </div>
 
                         <div class="mt-5">
@@ -83,9 +83,9 @@
                 <div class="card pricing-card">
                     <a class="rounded-0 text-muted text-center fs-3 fw-bold mt-3">Family</a>
                     <div class="card-body p-5">
-                        <p class="card-text text-center">up to 5 members</p>
+                        <p class="card-text text-center">up to <span class="fs-2 fw-bold ">5</span> members</p>
                         <div class="w-100 d-flex">
-                            <a href="#!" class="btn btn-success mx-auto fs-4 w-100">Save 50 %</a>
+                            <a href="#!" class="text-center text-muted mx-auto fs-4 w-100">Save 50 %</a>
                         </div>
 
                         <div class="mt-5">
@@ -114,4 +114,7 @@
 
 
 </div>
+
+{% include "home/quiz.html" %}
+
 {% endblock %}
