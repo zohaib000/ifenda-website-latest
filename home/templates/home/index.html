@@ -3,6 +3,18 @@
 {% block content %}
 {% load static %}
 
+<style>
+  .hero-btns{
+    padding: 28px!important;
+  }
+
+  .hero .btn-get-started span {
+    font-family: verdana!important;
+    font-size: 15px!important;
+    letter-spacing: 1px!important;
+  }
+
+</style>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center mt-3">
   
@@ -12,22 +24,43 @@
           <h1  style="font-family: Verdana, Geneva, Tahoma, sans-serif;" data-aos="fade-up primary-color">The Radical Protection againts advanced cyber threats of today and tommorrow
             is finally
             here !</h1>
-          <h2 data-aos="fade-up" data-aos-delay="400">
+          <p data-aos="fade-up" data-aos-delay="400">
             iFender the industry's most accurate , fastest and scalabale proactive protection platform
-            designed to
-            protects individuals,businesses,organizations and governments agencies by stopping in real time
-            the most
+            designed to protects individuals,businesses,organizations and governments agencies by stopping in real time.
+            <!-- the most
             complex and sophisticated cyber attacks of today, tommorow and beyond such as phisiing
             scams,social
             engineering, malware, ransomware , credential theft,identity theft m account takeover , brand
             impersonation
-            and all malicious links and websites ,before they cause damage.
+            and all malicious links and websites ,before they cause damage. -->
   
-          </h2>
+          </p>
+
+
+
 
             <div data-aos="fade-up" data-aos-delay="600" class="productsBtn-hero-container">
-              <div class="row">
-                <div class="col-md-4">
+              <div class="">
+
+                <a href="{% url 'preorder' %}" 
+                  class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center hero-btns">
+                  <span>Pre-order now!</span>
+                  <!-- <i class="bi bi-arrow-right"></i> -->
+                </a>
+             
+                <a href="{% url 'individual_pricing' %}"
+                  class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center hero-btns">
+                  <span>Protect your self!</span>
+                  <!-- <i class="bi bi-arrow-right"></i> -->
+                </a>
+        
+                <a href="{% url 'business_pricing' %}"
+                  class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center hero-btns">
+                  <span>Protect your business!</span>
+                  <!-- <i class="bi bi-arrow-right"></i> -->
+                </a>
+
+                <!-- <div class="col-md-4">
                   <a href="{% url 'preorder' %}"
                     class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                     <span>PRE-ORDER NOW!</span>
@@ -35,6 +68,7 @@
                   </a>
                   &emsp13;
                 </div>
+                
                 <div class="col-md-8">
                   <a href="{% url 'individual_pricing' %}"
                     class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center">
@@ -47,10 +81,14 @@
                     <span>FREE TRIAL FOR BUSINESS!</span>
                     <i class="bi bi-arrow-right"></i>
                   </a>
-                </div>
-            
+                </div> -->
+
               </div>
             </div>
+
+
+
+
             
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
@@ -62,8 +100,8 @@
   </section><!-- End Hero -->
 
 
-
-    <header class="section-header mt-3 py-5">
+&emsp13;
+    <header class="section-header mt-5 py-5">
       <p class="primary-color">Why iFender?</p>
     </header>
 

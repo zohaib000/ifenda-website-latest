@@ -144,6 +144,9 @@ class apply_for_partner(View):
 def Contact(request):
     return render(request, "home/contact.html")
 
+def Company(request):
+    return render(request, "home/company.html")
+
 
 def About(request):
     return render(request, "home/about.html")
@@ -159,6 +162,9 @@ def news(request):
 
 def events(request):
     return render(request, "home/events.html")
+
+def careers(request):
+    return render(request, "home/careers.html")
 
 
 class request_reset_password(View):

@@ -8,7 +8,7 @@
 
 
 .btn-free-trial{
-  width: 54%;
+  width: auto%;
 }
 
 /* ! custom csss */
@@ -26,7 +26,7 @@
  .question {
    text-decoration: none !important;
    font-size: 25px;
-   color: black;
+   color: #666666;
    font-weight: bold;
    width: 100% !important;
    justify-content: space-between;
@@ -64,8 +64,7 @@
 }
 
 .hero-HeaderText{
-  font-size: 100px!important;
-  font-family: system-ui;
+  font-family: Verdana;
 }
 
 .custom-position {
@@ -75,9 +74,10 @@
 
 /*  preorder.html */
 .timer-box {
-  border-radius: 5px;
-  padding: 50px!important;
+border-radius: 5px;
+  padding: 19px !important;
   background-color: #07e103;
+  width: 400px;
 }
 
 .btn-success {
@@ -99,6 +99,7 @@
 p,
 span {
   font-size: 20px;
+  font-family: verdana;
 }
 /* ! end custom css */
 
@@ -143,7 +144,7 @@ section {
 
 .section-header {
   text-align: center;
-  padding-bottom: 40px;
+  /* padding-bottom: 40px; */
 }
 
 .section-header h2 {
@@ -329,8 +330,7 @@ max-height: 70px;
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-family: "Nunito", sans-serif;
-font-size: 20px;
-  font-weight: 700;
+  font-size: 20px;
   color: #666666;
   white-space: nowrap;
   transition: 0.3s;
@@ -578,7 +578,7 @@ font-size: 22px;
 
 .hero h1 {
   margin: 0;
-  font-size: 45px;
+  font-size: 35px;
   font-weight: 700;
   color: #007FFF;
   font-family: verdana !important;
@@ -2563,3 +2563,14 @@ font-size: 22px;
       cursor: pointer;
       font-size: 20px !important;
     }
+
+
+        .img-fluid {
+          max-width: 75%;
+          height: auto;
+        }
+
+
+        .grey-color{
+          color: #666666;
+        }

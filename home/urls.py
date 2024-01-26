@@ -17,6 +17,8 @@ urlpatterns = [
     path("terms", views.Terms, name="terms"),
     path("news", views.news, name="news"),
     path("events", views.events, name="events"),
+    path("careers", views.careers, name="careers"),
+    path("company", views.Company, name="company"),
     # preorder products pages
     path(
         "individual_preorder_products",

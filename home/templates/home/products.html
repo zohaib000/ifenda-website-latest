@@ -3,6 +3,16 @@
 {% block title %}Products{% endblock %}
 {% block content %}
 
+<style>
+     .hero-btns{
+    padding: 28px!important;
+  }
+     .hero .btn-get-started span {
+    font-family: verdana!important;
+    font-size: 15px!important;
+    letter-spacing: 1px!important;
+  }
+</style>
 
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="hero d-flex align-items-center " style="margin-top: 80px;">
@@ -11,48 +21,51 @@
 
             <div class="col-lg-6 d-flex flex-column justify-content-center">
 
-                    <a href="#about"
-                        class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center custom-position">
-                        <span>BETA</span>
-                    </a>
+                
                    
                 
 
-                <h1 data-aos="fade-up" class="hero-HeaderText">Real-Time <br>
-                    Browser Defense.</h1>
-                <h2 data-aos="fade-up" data-aos-delay="400">
+                    <h1 data-aos="fade-up" class="hero-HeaderText">Real-Time 
+                        Browser Defense.
+                    </h1>
+
+        
+
+                <p data-aos="fade-up" data-aos-delay="400">
                     Protect yourself, your familly, your businesses, your organizations, your employees, your users,
                     your corporate brand
                     and reputation with the industry's most accurate, fastest and scalable proactive browser-centric
                     protection from today's
                     advanced cyber threats across all attack vectors before they cause damage.
-                </h2>
+                    
+                </p>
 
                 <div data-aos="fade-up" data-aos-delay="600" class="productsBtn-hero-container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <a href="{% url 'preorder' %}"
-                                class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span>PRE-ORDER NOW!</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                            &emsp13;
-                        </div>
-                        <div class="col-md-8">
-                            <a href="{% url 'individual_pricing' %}"
-                                class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span>FREE TRIAL FOR INDIVIDUAL!</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                            &emsp13;
-                            <a href="{% url 'business_pricing' %}"
-                                class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span>FREE TRIAL FOR BUSINESS!</span>
-                                <i class="bi bi-arrow-right"></i>
-                            </a>
-                        </div>
+                    <div class="">
+                
+                        <a href="{% url 'preorder' %}"
+                            class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center hero-btns">
+                            <span>Pre-order now!</span>
+                            <!-- <i class="bi bi-arrow-right"></i> -->
+                        </a>
+                
+                        <a href="{% url 'individual_pricing' %}"
+                            class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center hero-btns">
+                            <span>Protect your self!</span>
+                            <!-- <i class="bi bi-arrow-right"></i> -->
+                        </a>
+                
+                        <a href="{% url 'business_pricing' %}"
+                            class="btn-get-started btn-free-trial scrollto d-inline-flex align-items-center justify-content-center align-self-center hero-btns">
+                            <span>Protect your business!</span>
+                            <!-- <i class="bi bi-arrow-right"></i> -->
+                        </a>
+
+                
                     </div>
                 </div>
+
+
             </div>
 
             <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">

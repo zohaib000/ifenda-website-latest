@@ -1,151 +1,275 @@
 {% extends "home/base.html" %}
-{% block title %}Contact{% endblock %}
+{% block title %}Contact Us Page{% endblock %}
 {% block content %}
 {% load static %}
+<!-- ? main content section  ? -->
+<style>
+    label {
+        display: block;
+        text-align: left;
+        line-height: 150%;
+        font-size: .85em;
+    }
 
-<!-- ======= Hero Section ======= -->
-<section id="hero" class="hero d-flex align-items-center mt-3">
+    .section-header {
+        padding: 10px;
+    }
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 d-flex flex-column justify-content-center">
-                <h1 data-aos="fade-up">Contact iFender</h1>
-                <h2 data-aos="fade-up" data-aos-delay="400">
-                   Contact us anytime for your quires and questions.
 
-                </h2>
-                <div data-aos="fade-up" data-aos-delay="600">
-                    <div class="text-center text-lg-start">
-                        <a href=""
-                            class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                            <span>CONTACT US</span>
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
+    .policy-text {
+        text-align: left;
+
+    }
+
+    .policy-text span {
+        font-size: 16px;
+        !important
+    }
+
+    .main-container {
+        padding: 70px;
+        /* column-gap: 2vw; */
+
+    }
+
+    .col-11 p {
+        font-size: 19px !important;
+    }
+
+    .custom-card {
+        padding: 10px;
+        border: 1px solid #F7F7F7;
+        border-radius: 24px;
+        background: white;
+    }
+
+    @media screen and (max-width:1350px) {
+        .startingParagraph {
+            display: none;
+        }
+    }
+</style>
+<br><br><br>
+
+
+<div class="container-fluid mt-5 row main-container" style="padding-top: 30px;">
+    <div class="col-lg-6">
+        <div class="container products-card-container ">
+
+            <div class="row">
+                <div class="col-md-6 w-100">
+                    <div class="card" style="border: none!important;background: none!important;">
+                        <a class="btn-primary rounded-0 text-white btn fs-3 fw-bold">Contact Us</a>
+
+
+
+                        <div class="card-body p-1">
+
+
+
+                            <div class="container mt-2">
+                                <header class="section-header">
+                                    <p style="text-align: left;" class="primary-color">
+                                    Thanks for your interest in iFender
+                                    </p>
+                                </header>
+
+                                <p class="mt-3 startingParagraph">
+                                Please fill out this form to let us know where to reach you and how we can help.
+                                </p>
+
+                                <div class="row" style="font-size: 20px;margin-top: 46px;">
+                                    <div class="col-1 text-end">
+                                        <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>stops more than 90% advanced cyber threats than existing modern solutions</p>
+                                    </div>
+                                </div>
+
+
+                                <div class="row" style="font-size: 20px;">
+                                    <div class="col-1 text-end">
+                                        <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>install in minutes with zero impact on existing systems</p>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="font-size: 20px;">
+                                    <div class="col-1 text-end">
+                                        <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>99.85% detection rate with 0.00001% False positives</p>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="font-size: 20px;">
+                                    <div class="col-1 text-end">
+                                        <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Seamless easy to use : not require any hardware , software or agent
+                                            installation and update.</p>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="font-size: 20px;">
+                                    <div class="col-1 text-end">
+                                        <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>More than 500% ROI</p>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="font-size: 20px;">
+                                    <div class="col-1 text-end">
+                                        <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Save over 80% on operating costs</p>
+                                    </div>
+                                </div>
+
+                                <div class="row" style="font-size: 20px;">
+                                    <div class="col-1 text-end">
+                                        <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
+                                    </div>
+                                    <div class="col-11">
+                                        <p>Proactive protection : Detect and stop threats before they caused damage.</p>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+
+                        </div>
+
+
+
+
                     </div>
-
                 </div>
-            </div>
-            <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
-                <!-- <img src="{% static 'assets/img/partners_image.jpg' %}" style="max-width: 80%;" class="img-fluid" alt=""> -->
+
             </div>
         </div>
+
     </div>
 
-</section><!-- End Hero -->
 
+    <div class="col-lg-6 ">
+        <header class="section-header text-left custom-card">
+            <p class="pt-3 px-3 primary-color" style="text-align: left;">Enter Account Details</p><br>
+            <span class="mt-3">
+                </p>
 
-<!-- ? what makes iFender different  ? -->
-<div class="container" style="margin-top: 50px!important;">
-    <header class="section-header">
-        <p class="primary-color">What makes iFender different ?</p>
-    </header>
-
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>Stops more than 90% advanced cyber threats than existing modern solutions</p>
-        </div>
+                <div class="container p-3">
+                    <form>
+                        <div class="row">
+                            <div class="form-group col-6">
+                                <label for="" class="mb-2">Company Name</label>
+                                <input type="text" class="form-control" id="companyName" placeholder="">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="" class="mb-2" class="mb-2">Company Website</label>
+                                <input type="text" class="form-control" id="companyWebsite" placeholder="">
+                            </div>
+                        </div>
+                
+                        <div class="row mt-4">
+                            <div class="form-group col-6">
+                                <label for="" class="mb-2">First Name</label>
+                                <input type="text" class="form-control" id="firstName" placeholder="">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="" class="mb-2" class="mb-2">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" placeholder="">
+                            </div>
+                        </div>
+                
+                        <div class="form-group mt-4">
+                            <label for="" class="mb-2">Street Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="">
+                        </div>
+                
+                        <div class="row mt-4">
+                            <div class="form-group col-6">
+                                <label for="" class="mb-2">Zip/Postal Code</label>
+                                <input type="text" class="form-control" id="zipcode" placeholder="">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="" class="mb-2" class="mb-2">City</label>
+                                <input type="text" class="form-control" id="city" placeholder="">
+                            </div>
+                        </div>
+                
+                        <div class="form-group mt-4">
+                            <label for="" class="mb-2">Country</label>
+                            <input type="text" class="form-control" id="country" placeholder="">
+                        </div>
+                
+                
+                
+                
+                        <div class="row mt-4">
+                            <div class="form-group col-6 ">
+                                <label for="" class="mb-2">E-mail</label>
+                                <input type="email" class="form-control" id="email" placeholder="">
+                            </div>
+                            <div class="form-group col-6">
+                                <label for="" class="mb-2" class="mb-2">Phone</label>
+                                <input type="text" class="form-control" id="phone" placeholder="">
+                            </div>
+                        </div>
+                
+                        <div class="row mt-4">
+                            <div class="form-group mt-4">
+                                <label for="">Insdustries of Focus</label>
+                                <select name="industries" class="form-select" id="industries">
+                                    <option value="Fintech">Fintech</option>
+                                    <option value="Fableey">Fableey</option>
+                                </select>
+                            </div>
+                
+                            <div class="form-group mt-4">
+                                <label for="">Relationships of Interest</label>
+                                <select name="relationships" class="form-select" id="relationships">
+                                    <option value="Technology">Technology</option>
+                                    <option value="Marketing">Marketing</option>
+                                </select>
+                            </div>
+                        </div>
+                
+                
+                
+                        <div class="form-group mt-4">
+                            <label for="" class="mb-2">Tell us about your interest in becoming a iFender Partner</label>
+                            <textarea name="bio" class="form-control" id="bio" cols="30" rows="10"></textarea>
+                        </div>
+                
+                        <div class="form-group mt-5">
+                            <span>By continuing you agree to the iFender's <a href="">Privacy Policy</a> and <a href="">Terms of
+                                    Service?</a>
+                                </p>
+                        </div>
+                
+                        <a type="submit" class="btn btn-primary mt-2 w-100">Submit</a>
+                    </form>
+                </div>
+        </header>
     </div>
 
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>More than 10x Faster than existing modern solutions; with prediction average time of less than 250 ms</p>
-        </div>
+    <br>
+
+    <div class="mt-5 py-4">
+        {% include "home/quiz.html" %}
     </div>
 
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>install in minutes with zero impact on existing systems</p>
-        </div>
-    </div>
 
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>99.85% detection rate with 0.00001% False positives</p>
-        </div>
-    </div>
 
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>Seamless easy to use : not require any hardware , software or agent installation and update.</p>
-        </div>
-    </div>
-
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>More than 500% ROI</p>
-        </div>
-    </div>
-
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>Save over 80% on operating costs</p>
-        </div>
-    </div>
-
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>Multi-Vectors protection : Web, email, SMS , Messaging apps, Social Networks , Collaborative Cloud Apps
-                and
-                all Cloud Apps</p>
-        </div>
-    </div>
-
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>Proactive protection : Detect and stop threats before they caused damage.</p>
-        </div>
-    </div>
-
-    <div class="row my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>Advancy cyberthreats protection : phising attacks, Social Engeenering , Scams , Brand impersonation ,
-                Malwares, Ransomwares, Credentials stealing , identiy theft and all malicious links and websites</p>
-        </div>
-    </div>
-
-    <div class="row  my-3" style="font-size: 20px;">
-        <div class="col-1 text-start" style="width: 40px!important;">
-            <i class="fa-solid fa-circle-check" style="color: #0084ff;"></i>
-        </div>
-        <div class="col-11">
-            <p>Complete visibility into your cybercrime risks : Monitor all stopped cyberattacks and high risk users in
-                your
-                iFender Dashboard.</p>
-        </div>
-    </div>
-
-</div>
-
-{% include "home/quiz.html" %}
-
+</div><br><br>
 {% endblock %}

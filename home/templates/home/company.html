@@ -1,0 +1,188 @@
+{% extends "home/base.html" %}
+{% block title %}Home{% endblock %}
+{% block content %}
+{% load static %}
+
+<style>
+    .hero-btns {
+        padding: 28px !important;
+    }
+
+    .hero .btn-get-started span {
+        font-family: verdana !important;
+        font-size: 15px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .value-box{
+
+        border-radius: 10px;
+        padding: 30px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .icon-img{
+        width: 30%;
+
+    }
+
+    .mainRow{
+        gap: 10px;
+    }
+</style>
+
+
+
+
+<!-- ? How iFender Works  ? -->
+<div class="container mt-5 py-5" style="margin-top: 250px!important;">
+    <header class="section-header">
+        <p class="primary-color">How iFender works to protect you ?</p>
+    </header>
+    <p class="py-5">
+        iFender mission is to protect individuals, businesses and organizations in real time against today's advanced cyber
+        threats and to completely eliminate online fraud across all digital channels.
+    </p>
+</div>
+
+
+<!-- ? What we do ? -->
+<div class="container mt-5 py-5" style="margin-top: 50px!important;">
+    <header class="section-header">
+        <p class="primary-color">What we do ?</p>
+    </header>
+    <p class="py-5">
+        iFender develops innovative and disruptive technologies that protect individuals, businesses and organizations by
+        stopping today's advanced cyber threats and online fraud in real time across all digital channels before they cause
+        damage.
+    </p>
+</div>
+
+
+
+<!-- ? What we do ? -->
+<div class="container mt-5 py-5" style="margin-top: 50px!important;">
+    <header class="section-header">
+        <p class="primary-color">OUR VALUES ?</p>
+    </header>
+    <p class="py-5">
+    The main values that guide the way the iFender teams works every day to implement the company's vision and mission are:
+    </p>
+    
+    <div class="container">
+        <div class="d-flex mainRow">
+            <div class="value-box bg-primary text-white ">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'assets/img/icons/1.png' %}" class="icon-img" alt="">
+                </div>
+                <h3 class="fw-bold text-center" style="font-family: Verdana;">Empathy</h3>
+                <div>
+                    <p>
+                        We try to understand and appreciate the experiences, emotions, and challenges faced our colleagues and customers. We put
+                        ourselves in their shoes, and consider their perspective before making judgments or forming opinions.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="value-box bg-primary text-white ">
+
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'assets/img/icons/2.png' %}" class="icon-img" alt="">
+                </div>
+                <h3 class="fw-bold text-center" style="font-family: Verdana;">Inclusivity & Diversity</h3>
+                <div>
+                    <p>
+                    We create an inclusive environment where all individuals feel valued and included, and we embrace difference.
+                    </p>
+                
+                </div>
+
+            </div>
+            <div class="value-box bg-primary text-white ">
+
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'assets/img/icons/3.png' %}" class="icon-img" alt="">
+                </div>
+                <h3 class="fw-bold text-center" style="font-family: Verdana;">Customer Success</h3>
+                <div>
+                    <p>
+                        Our success is our customers success! We do our best every day to put our customers first in order to fully understand
+                        and prioritize their needs.
+                    </p>
+                
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="d-flex mainRow">
+            <div class="value-box bg-primary text-white ">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'assets/img/icons/4.png' %}" class="icon-img" alt="">
+                </div>
+                <h3 class="fw-bold text-center" style="font-family: Verdana;">Integrity</h3>
+                <div>
+                    <p>
+                        We treat our colleagues and customers with respect, and we honor our commitments.
+                    </p>
+
+                </div>
+            </div>
+
+            <div class="value-box bg-primary text-white ">
+
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'assets/img/icons/5.png' %}" class="icon-img" alt="">
+                </div>
+                <h3 class="fw-bold text-center" style="font-family: Verdana;">Innovation</h3>
+                <div>
+                    <p>
+                        We constantly anticipating how to extend the value of our technologies to stay one step ahead of cybercriminals
+                    </p>
+                
+                </div>
+
+            </div>
+            <div class="value-box bg-primary text-white ">
+
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'assets/img/icons/6.png' %}" class="icon-img" alt="">
+                </div>
+                <h3 class="fw-bold text-center" style="font-family: Verdana;">Excellence</h3>
+                <div>
+                    <p>
+                        We constantly challenge ourselves and our teams to be better.
+                    </p>
+                
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ? What we do ? -->
+<div class="container mt-5 py-5" style="margin-top: 50px!important;">
+    <header class="section-header">
+        <p class="primary-color">Careers</p>
+    </header>
+    <p class="py-5">
+        Do you share iFender's vision and want to join our team to help defeat cybercrime and eliminate bad actors
+        across all
+        digital channels to protect individuals, businesses and organizations? Share your details and let us know your
+        interest
+        in joining the iFender team, we will contact you!
+    </p>
+    <div class="d-flex justify-content-center">
+        <a class="btn btn-primary getstarted scrollto" href="{% url 'careers' %}">GET IN TOUCH</a>
+    </div>
+</div>
+
+
+{% include "home/quiz.html" %}
+
+
+{% endblock %}

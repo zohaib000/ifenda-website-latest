@@ -80,7 +80,7 @@
         <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
             <a href="{% url 'home' %}" class="logo d-flex align-items-center">
-                <img src="{% static 'assets/img/logo.png' %}" alt="">
+                <img src="{% static 'assets/img/blue_logo.png' %}" alt="">
                 <span></span>
             </a>
 
@@ -92,13 +92,13 @@
                                 <li>
                                     <div class="row my-3">
                                         <div class="col-8">
-                                            <a href="{% url 'products' %}" class="text-primary fw-bold">🚀 IFender Real Time Browser
+                                            <a href="{% url 'products' %}" class="text-primary fw-bold">🚀 iFender Real-Time Browser
                                                 Defense</a>
                                         </div>
                                         <div class="col-4">
                                             <a href="#about"
                                                 class="navbar-beta-btn text-white btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center mt-0">
-                                                <span>BETA</span>
+                                                <span style="font-size: 13px;">Beta</span>
                                             </a>
                                         </div>
                                     </div>
@@ -107,13 +107,28 @@
                                 <li>
                                     <div class="row my-3">
                                         <div class="col-8">
-                                            <a href="{% url 'products' %}?product=api" class="text-muted fw-bold">🚀 IFender Real Time Browser
-                                                Api</a>
+                                            <a href="{% url 'products' %}?product=api" class="text-muted fw-bold">🚀 iFender Real-Time Browser
+                                                API</a>
                                         </div>
                                         <div class="col-4">
                                             <a href="#about"
                                                 class="navbar-beta-btn text-white btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center mt-0">
-                                                <span>BETA</span>
+                                                <span style="font-size: 13px;">Beta</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                               
+                                <li>
+                                    <div class="row my-3">
+                                        <div class="col-8">
+                                            <a href="{% url 'products' %}?product=api" class="text-muted fw-bold">🚀 iFender Online Fraud Protection</a>
+                                        </div>
+                                        <div class="col-4">
+                                            <a href="#about"
+                                                aria-disabled="true"
+                                                class="navbar-beta-btn text-white btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center mt-0">
+                                                <span style="font-size: 13px;">Beta</span>
                                             </a>
                                         </div>
                                     </div>
@@ -123,9 +138,10 @@
                     <li><a class="nav-link scrollto " href="{% url 'pricing' %}">Pricing</a></li>
                     <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
                         <ul>
-                            <li><a href="#">Company</a></li>
+                            <li><a href="{% url 'company' %}">Company</a></li>
                             <li><a href="{% url 'news' %}">News & Press</a></li>
                             <li><a href="{% url 'events' %}">Events</a></li>
+                            <li><a href="{% url 'careers' %}">Careers</a></li>
                         </ul>
                     </li>
 
@@ -175,13 +191,19 @@
                             <p class="primary-color">Don't miss anything</p>
 
                         </header>
-                        <p>Get industry trends, insights and practical tips for fighting cybercrime.</p>
+                        <p class="py-4">Get industry trends, insights and practical tips for fighting cybercrime.</p>
+                        <div class="col-lg-6 mx-auto">
+                            <form action="" method="post">
+                                <input type="email" name="email"><input type="submit" value="SUBSCRIBE">
+                            </form>
+                        </div>
+                        <p class="py-4">
+                            By clicking on the subscribe, you confirm that you agree to <a href="">iFender’s Terms of Service</a> and <a
+                                href="">Privacy Policy</a> and agree to
+                            the processing of your personal data and acknowledge your related rights, as described therein.
+                        </p>
                     </div>
-                    <div class="col-lg-6">
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="SUBSCRIBE">
-                        </form>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -191,7 +213,7 @@
                 <div class="row gy-4">
                     <div class="col-lg-5 col-md-12 footer-info">
                         <a href="{% url 'home' %}" class="logo d-flex align-items-center">
-                            <img src="{% static 'assets/img/logo.png' %}" alt="">
+                            <img src="{% static 'assets/img/blue_logo.png' %}" alt="">
                         </a>
                         <p class="primary-font-size">The Radical Protection againts advanced cyber threats of today and
                             tommorrow is finally here
